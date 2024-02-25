@@ -232,3 +232,28 @@ expressive.
 ## Resources
 
 - [MDN: Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+
+
+
+
+
+
+
+
+
+
+
+const titleCased = tutorials.map(tutorial => {
+  // Split the tutorial title into words
+  const words = tutorial.split(' ');
+
+  // Capitalize the first letter of each word
+  const capitalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1));
+
+   return capitalizedWords;
+});
+
+
+ 
+
+console.log(titleCased);
